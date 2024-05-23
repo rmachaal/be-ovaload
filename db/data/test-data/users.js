@@ -2,7 +2,7 @@ const users = [
   {
     name: "Jimmy Ratty",
     username: "jimratty",
-    password: "password123",
+    password: "password1234",
     exercises: [
       {
         exerciseName: "bench-press",
