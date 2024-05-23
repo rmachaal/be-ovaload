@@ -7,11 +7,11 @@ exports.getExercises = async (req, res) => {
   }
   try {
 
-    const user = await User.findOne({ username: username });
+    const user = await User.find({ username: username });
     if (!user) {
       return res.status(404).json({ message: "User not found" })};
 
-    const data = await User.findOne({ username: username }, "exercises");
+    const data = await User.find({ username: username }, "exercises");
     const exercises = data.exercises;
     if (exercises.length === 0) {
       return res.status(404).json({ message: "No exercises found" });
