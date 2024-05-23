@@ -91,7 +91,7 @@ const users = [
   {
     name: "Chris Evans",
     username: "chrisevans",
-    password: "password111",
+    password: "ovaload2024",
     exercises: [
       {
         exerciseName: "lat-pulldown",

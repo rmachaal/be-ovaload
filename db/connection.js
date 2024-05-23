@@ -3,7 +3,12 @@ const mongoose = require("mongoose");
 const path = require("path");
 
 const env = process.env.NODE_ENV || "development";
-const envFile = env === "test" ? ".env.test" : ".env.development";
+const envFile =
+  env === "test"
+    ? ".env.test"
+    : env === "production"
+    ? ".env.production"
+    : ".env.development";
 
 dotenv.config({ path: path.resolve(process.cwd(), envFile) });
 
