@@ -19,6 +19,7 @@ const connectDB = async () => {
     await mongoose.connect(mongoString, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 60000,
     });
     console.log("Database connected");
   } catch (error) {

@@ -5,6 +5,7 @@
   "main": "listen.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
+    "start": "node listen.js",
     "devStart": "nodemon listen.js",
     "seed": "NODE_ENV=development node ./db/seeds/run-seed.js",
     "seed-prod": "NODE_ENV=production node ./db/seeds/run-seed.js"
